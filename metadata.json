@@ -1,0 +1,11 @@
+{
+  "name": "DinGelHack Taktikal USB/WEB Suite",
+  "description": "HAL-FLASH Rescue \u0026 PlayG Suite\nSubline: Autonomes Hardware-OS \u0026 Agent-Orchestrator für Device-Recovery und Private-Cloud-Engineering.\n1. Kurzbeschreibung (Der \"Elevator Pitch\")\n\"HAL-FLASH ist die ultimative Web-Schnittstelle für radikale Hardware-Kontrolle und Datensouveränität. Retten Sie Smartphones (Redmi/Qualcomm), programmieren Sie ESP32-Ökosysteme und bauen Sie KI-Agenten in einer vollständig verschlüsselten Umgebung. Wo andere Tools an Hersteller-Sperren scheitern, beginnt HAL-FLASH – direkt im Browser, ohne Datenabfluss an Dritte.\"\n2. Kern-Features (Die \"Rescue-Logik\")\nHardware-Sondierung: Direkter Zugriff auf EDL (9008), Fastboot und WebSerial zur Wiederherstellung gebrickter Geräte oder zum Flashen eigener Betriebssysteme.\nPrivacy-Shield: Integrierte GPG/Age-Verschlüsselung und Headscale-VPN-Tunneling. Ihre Daten verlassen Ihr Netzwerk niemals unverschlüsselt.\nAgent-Building: Nutzen Sie den Build Planner mit Claude Agent SDK \u0026 MCP, um komplexe Automatisierungen und KI-Tools in Echtzeit zu generieren.\nTri-Channel-Connectivity: Zeitgleiche Steuerung von Cloud-Schnittstellen, USB-Hardware und Bluetooth-Umgebungssensoren.\n3. Technische Spezifikationen (Für Profis)\nProtokolle: Qualcomm Sahara/Firehose, ADB-over-WebUSB, Web Bluetooth (BLE).\nDatenhaltung: Lokale Identitätsprüfung via Authelia, Secret-Management durch Vaultwarden und verschlüsselte Edge-Datenbanken (SurrealDB).\nAutomatisierung: GitHub Actions CI/CD Integration für automatische Firmware-Builds.\n4. Das Versprechen (Datenschutz-Doktrin)\n\"Keine Telemetrie. Keine Drittanbieter-Cloud. Keine Kompromisse. HAL-FLASH-OS nutzt lokale Browser-APIs (WebUSB/Serial), um die Lücke zwischen Web und physischer Hardware zu schließen, während Ihr \u0027Digitaler Fußabdruck\u0027 durch Tor-Tunneling und Self-Hosted-Dienste (Headscale/Zitadel) unsichtbar bleibt.\"",
+  "requestFramePermissions": [
+    "usb",
+    "bluetooth",
+    "serial",
+    "nfc",
+    "microphone"
+  ]"wlan"
+}

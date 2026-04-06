@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAL-FLASH-OS | Captive Portal</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .container {
+            border: 1px solid #00FF00;
+            padding: 2rem;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+        p { font-size: 0.8rem; margin-bottom: 2rem; opacity: 0.8; }
+        .btn {
+            background-color: #00FF00;
+            color: #050505;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn:hover {
+            background-color: #050505;
+            color: #00FF00;
+            outline: 1px solid #00FF00;
+        }
+        .status { margin-top: 1rem; font-size: 0.6rem; opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ACCESS_GRANTED</h1>
+        <p>Hardware Bridge erfolgreich synchronisiert. Die Verbindung zum Taktikal-Netzwerk wurde hergestellt.</p>
+        <button class="btn" onclick="window.close()">CLOSE_PORTAL</button>
+        <div class="status">IP: 192.168.4.1 | MAC: DE:AD:BE:EF:CA:FE</div>
+    </div>
+</body>
+</html>

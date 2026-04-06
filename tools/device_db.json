@@ -1,0 +1,32 @@
+{
+    "compatible_devices": [
+        {
+            "manufacturer": "Samsung",
+            "models": ["SM-G9*", "SM-S9*", "SM-N9*"],
+            "android_versions": ["11", "12", "13"],
+            "exploit": "SETUP_LOCK_SCREEN",
+            "risk": "low",
+            "validation_pattern": "Android.*Samsung.*Version/[0-9]+"
+        },
+        {
+            "manufacturer": "Google",
+            "models": ["Pixel 4", "Pixel 5", "Pixel 6", "Pixel 7"],
+            "android_versions": ["12", "13", "14"],
+            "exploit": "SETUP_LOCK_SCREEN",
+            "risk": "low",
+            "validation_pattern": "Android.*Pixel"
+        }
+    ],
+    "blocked_devices": [
+        {
+            "manufacturer": "Huawei",
+            "reason": "EMUI hat abweichende Intent-Handling",
+            "risk": "high"
+        }
+    ],
+    "fallback_strategies": {
+        "dns_failure": "local_dns_cache",
+        "server_failure": "static_html_fallback",
+        "validation_failure": "manual_override"
+    }
+}
